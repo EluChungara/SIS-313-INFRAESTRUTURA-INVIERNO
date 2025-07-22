@@ -12,3 +12,8 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`APP1 corriendo en puerto ${PORT}`);
 });
+
+### Iniciamos la aplicacion con :
+```
+node index.js
+```
