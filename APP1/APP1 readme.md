@@ -26,11 +26,13 @@ Estructura de archivos de la app
 Se creó un proyecto básico en Node.js con las siguientes carpetas:
 
 app1/
+
 ├── index.js
 
 ├── package.json
 
 └── routes/
+
     └── crud.js
 ### Inicialización del proyecto
 ```
