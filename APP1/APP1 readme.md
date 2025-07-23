@@ -4,7 +4,7 @@ Este servidor forma parte de la arquitectura escalable del proyecto **Examen de 
 
 ---
 
-## ⚙️ Configuración inicial
+## Configuración inicial
 
 ### IP asignada a esta VM: `10.0.0.11`  
 Puerto de escucha: `3001`
