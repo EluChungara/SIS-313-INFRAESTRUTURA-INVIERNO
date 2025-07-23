@@ -1,16 +1,10 @@
-# SIS313: Examen de Invierno - Configuración de APP3
-
-## Introducción
-
-Este repositorio corresponde a la configuración del servidor de aplicaciones 3 (**APP3**) como parte del proyecto de infraestructura web escalable y tolerante a fallos para la materia **SIS313 - Examen de Invierno**. Esta fase representa el 50% de avance para APP3, similar al progreso hecho en APP1 y APP2.
+# SIS313: Configuración de APP3
+esta seccion idnica como se desarrollo la app3
 
 La infraestructura general incluye:
 
-- Un balanceador de carga (Nginx)
-- Tres servidores de aplicaciones (**APP1**, **APP2**, **APP3**) con Node.js
-- Un servidor de base de datos (**MariaDB** con RAID 10)
+**APP3** con Node.js
 
-Este repositorio documenta la instalación básica y ejecución de APP3, con una respuesta simple en la raíz como parte del desarrollo incremental hacia una aplicación CRUD completa.
 
 ---
 
