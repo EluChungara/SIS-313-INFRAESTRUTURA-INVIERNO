@@ -1,8 +1,8 @@
 ### Crear el RAID 10 usando mdadm
-´´´
+
 sudo mdadm --create --verbose /dev/md0 --level=10 --raid-devices=4 \
 /dev/loop10 /dev/loop11 /dev/loop12 /dev/loop13
-´´´
+
 ### Crear el sistema de archivos (ext4)
 sudo mkfs.ext4 /dev/md0
 ### Montamos el RAID en una carpeta específica
