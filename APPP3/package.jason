@@ -1,0 +1,22 @@
+
+---
+
+### 📁 Archivos que debes subir a tu repositorio **APP3** en GitHub
+
+####  `package.json` de APP3
+
+```json
+{
+  "name": "app3",
+  "version": "1.0.0",
+  "description": "Servidor APP3 para infraestructura web escalable - SIS313",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
