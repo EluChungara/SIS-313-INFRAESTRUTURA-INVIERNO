@@ -12,13 +12,13 @@
 
 Este repositorio documenta el desarrollo del proyecto final de la materia SIS313, cuyo objetivo es implementar una infraestructura web distribuida y tolerante a fallos, con balanceador de carga, múltiples servidores de aplicación y una base de datos centralizada protegida mediante RAID 10.
 
-## ℹ️ Detalles del Proyecto
+##  Detalles del Proyecto
 
 * **Balanceador de carga:** NGINX
 * **Aplicaciones:** Servidores Node.js con CRUD
 * **Base de datos:** MySQL (una sola instancia) con RAID 10
 
-## 🌐 Topología de Red
+## Topología de Red
 
 | Servidor | Rol             | IP Estática | Puerto    | Descripción                       |
 | -------- | --------------- | ----------- | --------- | --------------------------------- |
@@ -32,7 +32,7 @@ Este repositorio documenta el desarrollo del proyecto final de la materia SIS313
 
 ---
 
-## ⚖️ Arquitectura General
+## Arquitectura General
 
 ```
                     [ Internet ]
