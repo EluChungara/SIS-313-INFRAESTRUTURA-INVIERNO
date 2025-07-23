@@ -1,4 +1,4 @@
- **Base de datos (MariaDB):** 10.0.1.14
+ **Base de datos MariaDB:** 10.0.1.14
 ---
 
 ## Configuración del Servidor de Base de Datos
