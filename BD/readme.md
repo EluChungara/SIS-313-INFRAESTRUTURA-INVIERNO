@@ -61,21 +61,6 @@ Para asegurar la alta disponibilidad y redundancia de los datos críticos, se co
 * Carpeta: `bd/raid/`
 * Archivo: `config-raid10.md`
 
-### Resumen del procedimiento (ver archivo para detalle):
-
-```bash
-# Crear imágenes para 4 discos virtuales
-sudo fallocate -l 1G /raid-disk1.img
-sudo fallocate -l 1G /raid-disk2.img
-sudo fallocate -l 1G /raid-disk3.img
-sudo fallocate -l 1G /raid-disk4.img
-
-# Asociar imágenes a dispositivos de loop
-sudo losetup /dev/loop10 /raid-disk1.img
-sudo losetup /dev/loop11 /raid-disk2.img
-sudo losetup /dev/loop12 /raid-disk3.img
-sudo losetup /dev/loop13 /raid-disk4.img
-
 # Crear RAID 10
 sudo mdadm --create --verbose /dev/md0 --level=10 --raid-devices=4 \
   /dev/loop10 /dev/loop11 /dev/loop12 /dev/loop13
@@ -86,17 +71,6 @@ sudo mkfs.ext4 /dev/md0
 # Montar el volumen RAID
 sudo mount /dev/md0 /mnt/raid10
 ```
-
-El archivo `config-raid10.md` contiene el procedimiento completo y verificado en el entorno de prueba de nuestra red con IPs del rango `10.0.0.x`.
-
----
-
-
-## Consideraciones finales
-
-* El RAID 10 fue configurado específicamente para la base de datos debido a la necesidad de garantizar tolerancia a fallos y velocidad de acceso.
-* Toda esta configuración se realizó sobre una IP dentro del segmento privado `10.0.0.x`, respetando la arquitectura definida en el proyecto.
-* Este entorno replica una infraestructura web escalable mínima viable, adecuada para entornos académicos y demostraciones prácticas.
 
 ---
 
