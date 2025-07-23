@@ -1,4 +1,4 @@
-# SIS313: Examen de Invierno - Configuración de APP2
+# SIS313: Configuración de APP2
 
 ## Introducción
 
