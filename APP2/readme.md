@@ -23,3 +23,42 @@ En la máquina virtual de **APP2** (IP: `10.0.1.12`), ejecuté los siguientes co
 ```bash
 sudo apt update
 sudo apt install nodejs npm -y
+```
+### Verificación de la instalación se hizo con :
+```node -v
+npm -v
+```
+## Configuración de la Aplicación
+### Creación del Proyecto
+ Primero, creé el directorio y el archivo principal:
+```
+ mkdir -p /var/www/app2
+cd /var/www/app2
+nano app.js
+```
+### Luego se ejecutó el siguiente código en app.js:
+```
+const express = require('express');
+const app = express();
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+app.get('/', (req, res) => {
+  res.send('Bienvenido a APP2 - Servidor de Aplicaciones 2');
+});
+
+app.listen(3000, () => {
+  console.log('APP2 corriendo en el puerto 3000');
+});
+```
+## Después inicialicé el proyecto y agregué las dependencias:
+```
+npm init -y
+npm install express
+```
+## Ejecución de la Aplicación
+Inicié la aplicación con:
+```
+node app.js
+```
