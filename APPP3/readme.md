@@ -1,10 +1,6 @@
 # SIS313: Configuración de APP3
-esta seccion idnica como se desarrollo la app3
-
-La infraestructura general incluye:
 
 **APP3** con Node.js
-
 
 ---
 
